@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experiment 1 - LED Blink</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 850px;
+            margin: auto;
+            padding: 30px;
+            background: #f5f5f5;
+        }
+
+        .content {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        pre {
+            background: #1e293b;
+            color: white;
+            padding: 18px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        a {
+            color: #0369a1;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="content">
+
+    <h1>Experiment 1: LED Blinking</h1>
+
+    <h2>Objective</h2>
+    <p>To blink an LED using an Arduino board.</p>
+
+    <h2>Components Required</h2>
+    <p>Arduino UNO, LED, 220Ω resistor, jumper wires and breadboard.</p>
+
+    <h2>Arduino Code</h2>
+
+    <pre>
+void setup() {
+    pinMode(13, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(13, HIGH);
+    delay(1000);
+
+    digitalWrite(13, LOW);
+    delay(1000);
+}
+    </pre>
+
+    <p>
+        <a href="LED_Blink.ino" download>Download Arduino Code</a>
+    </p>
+
+    <p>
+        <a href="../">← Back to all experiments</a>
+    </p>
+
+</div>
+
+</body>
+
+</html>
